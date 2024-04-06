@@ -8,6 +8,11 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "rules": {},
+  "rules": {
+    "import/no-extraneous-dependencies": [
+      "error",
+      { "projectDependencies": false }
+    ]
+  },
   "ignorePatterns": ["node_modules", "build", "dist", "public"]
 }
