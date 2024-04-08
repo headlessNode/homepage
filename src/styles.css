@@ -4,9 +4,46 @@
   box-sizing: border-box;
 }
 
+body {
+  background: rgb(26, 26, 26);
+}
+
 .header {
+  padding: 0 80px 0 80px;
+  color: white;
   display: flex;
   justify-content: space-between;
+  font-family: 'Inter Tight', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.header .name {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  border: 1px solid white;
+  padding: 20px 50px 20px 50px;
+}
+
+.header .connect {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid white;
+  padding: 20px 50px 20px 50px;
+}
+
+.connect button {
+  cursor: pointer;
+  padding: 10px 20px 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-family: 'Inter Tight', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-size: 15px;
 }
 
 h1 {
@@ -57,8 +94,9 @@ h1 {
 }
 
 .hero {
-  border: 1px solid black;
-
+  border: 1px solid white;
+  color: white;
+  padding-top: 50px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
