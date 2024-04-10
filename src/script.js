@@ -53,15 +53,13 @@ const scrollTimeline = gsap.timeline({
     pin: true, // Pin everthing
     scrub: true, // Use true to remove the lag that makes things feel janky
     markers: true,
-    // animation: scrollAnimation, // Add the whole timeline to the controll of the ScrollTrigger
-    // animation: scrollTimeline, // No need if you make ScrollTrigger part of the timeline
     start: 'top',
     end: 'bottom 50%',
   },
 });
 scrollTimeline
   .to('.title', {
-    scale: 0,
+    scale: 0.8,
     opacity: 0,
     ease: 'none',
   })

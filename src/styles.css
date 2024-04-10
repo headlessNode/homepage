@@ -68,6 +68,14 @@ h1 {
   font-optical-sizing: auto;
   font-weight: 600;
   font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.connect button .cpy {
+  width: 20px;
+  height: 20px;
 }
 
 .heading-one,
@@ -129,6 +137,5 @@ h1 {
 
 .hero .picture {
   border-radius: 50px;
-  /* width: 700px; */
   height: 500px;
 }
