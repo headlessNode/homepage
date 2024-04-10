@@ -46,8 +46,6 @@ initialTimeline
     '-=0.5',
   );
 
-// initialTimeline.play(); // This is default, no need to set it manually if you dont chagne antything
-
 const scrollTimeline = gsap.timeline({
   scrollTrigger: {
     // make ScrollTrigger part of the timeline
@@ -58,8 +56,7 @@ const scrollTimeline = gsap.timeline({
     // animation: scrollAnimation, // Add the whole timeline to the controll of the ScrollTrigger
     // animation: scrollTimeline, // No need if you make ScrollTrigger part of the timeline
     start: 'top',
-    end: 'bottom',
-    // end: `top+=${window.innerHeight} top` // add window height as a scroll distance
+    end: 'bottom 50%',
   },
 });
 scrollTimeline
@@ -67,14 +64,15 @@ scrollTimeline
     scale: 0,
     opacity: 0,
     ease: 'none',
-    // duration: 1 // Make both tween the same duration
   })
-  .from(
+  .fromTo(
     picture,
     {
-      yPercent: 120, // When using yPercent, you can just use numbers instead of strings
-      // y: () => window.innerHeight / 2, // move elemnt .from() the current window height
+      yPercent: 120,
       ease: 'none',
+    },
+    {
+      yPercent: -50,
     },
     '<',
   );
