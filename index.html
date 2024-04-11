@@ -9,6 +9,13 @@
       href="https://fonts.googleapis.com/css2?family=Inter+Tight&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Homepage</title>
   <script defer src="main.js"></script></head>
   <body>
@@ -60,7 +67,7 @@
               <p>(2021 - Present)</p>
             </div>
           </div>
-          <img class="picture" src="../src/img/hero-img.png" />
+          <img class="picture" src="../src/img/profile.jpeg" />
         </div>
       </div>
       <div class="main row">
@@ -76,90 +83,69 @@
         </div>
         <div class="experience">
           <div class="proj-heading">
-            <h1>RELEVANT</h1>
-            <h1>EXPERIENCE</h1>
+            <h1 class="proj-heading-one">RELEVANT</h1>
+            <h1 class="proj-heading-two">EXPERIENCE</h1>
           </div>
           <div class="projects">
-            <div class="preview"></div>
+            <div class="proj-preview">
+              <div class="preview-img"></div>
+            </div>
             <div class="proj-deets">
-              <div class="project">
-                <h4>Battleship</h4>
-                <p>
-                  Developed a Battleship game by implementing Test-Driven
-                  Development (TDD) principles to write robust and efficient
-                  code. A custom algorithm for psuedo-smart AI was also
-                  implemented.
-                </p>
-                <div class="links">
-                  <a
-                    href="https://github.com/headlessNode/battleship"
-                    target="_blank"
-                    >Repository</a
-                  >
-                  <a
-                    href="https://headlessnode.github.io/battleship/"
-                    target="_blank"
-                    >Live Demo</a
-                  >
-                </div>
+              <div class="project battleship">
+                <button>
+                  <div class="arrow">
+                    <i
+                      class="icon fa-solid fa-arrow-right fa-2xl"
+                      style="color: #f2f2f2"
+                    ></i>
+                  </div>
+                  <div class="proj-txt">
+                    <h4>Battleship</h4>
+                    <p>Test Driven Development</p>
+                  </div>
+                </button>
               </div>
-              <div class="project">
-                <h4>Task Trackr</h4>
-                <p>
-                  Utilized the local storage and the SOLID principle to develop
-                  a To-do list app.
-                </p>
-                <div class="links">
-                  <a
-                    href="https://github.com/headlessNode/task-trackr"
-                    target="_blank"
-                    >Repository</a
-                  >
-                  <a
-                    href="https://headlessnode.github.io/task-trackr/"
-                    target="_blank"
-                    >Live Demo</a
-                  >
-                </div>
+              <div class="project todo">
+                <button>
+                  <div class="arrow">
+                    <i
+                      class="icon fa-solid fa-arrow-right fa-2xl"
+                      style="color: #f2f2f2"
+                    ></i>
+                  </div>
+                  <div class="proj-txt">
+                    <h4>Task Trackr</h4>
+                    <p>Local Storage</p>
+                  </div>
+                </button>
               </div>
-              <div class="project">
-                <h4>Weather App</h4>
-                <p>
-                  Used API and asynchronous operations to fetch weather data
-                  ensuring seamless user experience and error handling.
-                </p>
-                <div class="links">
-                  <a
-                    href="https://github.com/headlessNode/weather-app"
-                    target="_blank"
-                    >Repository</a
-                  >
-                  <a
-                    href="https://headlessnode.github.io/weather-app/"
-                    target="_blank"
-                    >Live Demo</a
-                  >
-                </div>
+              <div class="project weather">
+                <button>
+                  <div class="arrow">
+                    <i
+                      class="icon fa-solid fa-arrow-right fa-2xl"
+                      style="color: #f2f2f2"
+                    ></i>
+                  </div>
+                  <div class="proj-txt">
+                    <h4>Weather App</h4>
+                    <p>Fetch API</p>
+                  </div>
+                </button>
               </div>
-              <div class="project">
-                <h4>Tic Tac Toe</h4>
-                <p>
-                  Developed a Tic-Tac-Toe game by utilizing code modularization
-                  and adhering to SOLID principles. MiniMax algorithm was used
-                  to implement a "smart" AI.
-                </p>
-                <div class="links">
-                  <a
-                    href="https://github.com/headlessNode/tic-tac-toe"
-                    target="_blank"
-                    >Repository</a
-                  >
-                  <a
-                    href="https://headlessnode.github.io/tic-tac-toe/"
-                    target="_blank"
-                    >Live Demo</a
-                  >
-                </div>
+              <div class="project tictac">
+                <button>
+                  <div class="arrow">
+                    <i
+                      class="icon fa-solid fa-arrow-right fa-2xl"
+                      style="color: #f2f2f2"
+                    ></i>
+                  </div>
+                  <div class="proj-txt">
+                    <h4>Tic Tac Toe</h4>
+                    <p>SOLID Principles</p>
+                  </div>
+                </button>
               </div>
             </div>
           </div>
