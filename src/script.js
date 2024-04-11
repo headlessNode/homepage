@@ -127,7 +127,7 @@ textTwoScrollTimeline.from(mainTextTwo, {
 const projectHeadingScroll = gsap.timeline({
   scrollTrigger: {
     trigger: projectHeading,
-    start: 'top 50%%',
+    start: 'top 70%%',
     end: 'bottom 50%',
   },
 });
@@ -141,10 +141,10 @@ projectHeadingScroll.from([projectHeadingOne, projectHeadingTwo], {
 
 const projectsScrollTimeline = gsap.timeline({
   scrollTrigger: {
-    trigger: projects,
+    trigger: projectsContainer,
+    markers: true,
     start: 'top 50%',
     end: 'bottom 50%',
-    markers: true,
   },
 });
 
@@ -157,32 +157,24 @@ projectsScrollTimeline.from(projectsContainer, {
 function onMouseEnter(event) {
   let buttonArrow;
   if (event.target.classList.contains('battleship')) {
-    // projectPreview.innerHTML =
-    //   "<img class='battleship-img' style='background-size: contain' src='../src/img/battleship.jpeg'>";
     projectPreview.style.backgroundImage = "url('../src/img/battleship.jpeg')";
     projectPreview.style.backgroundSize = 'contain';
     projectPreview.style.backgroundRepeat = 'no-repeat';
     projectPreview.style.backgroundPosition = 'center';
     buttonArrow = '.battleship button .arrow';
   } else if (event.target.classList.contains('todo')) {
-    // projectPreview.innerHTML =
-    //   "<img class='todo-img' style='background-size: contain' src='../src/img/todo.jpeg'>";
     projectPreview.style.backgroundImage = "url('../src/img/todo.jpeg')";
     projectPreview.style.backgroundSize = 'contain';
     projectPreview.style.backgroundRepeat = 'no-repeat';
     projectPreview.style.backgroundPosition = 'center';
     buttonArrow = '.todo button .arrow';
   } else if (event.target.classList.contains('tictac')) {
-    // projectPreview.innerHTML =
-    //   "<img class='tictac-img' style='background-size: contain' src='../src/img/tic-tac-toe.jpeg'>";
     projectPreview.style.backgroundImage = "url('../src/img/tic-tac-toe.jpeg')";
     projectPreview.style.backgroundSize = 'contain';
     projectPreview.style.backgroundRepeat = 'no-repeat';
     projectPreview.style.backgroundPosition = 'center';
     buttonArrow = '.tictac button .arrow';
   } else {
-    // projectPreview.innerHTML =
-    //   "<img class='weather-img' style='background-size: contain' src='../src/img/weather.jpeg'>";
     projectPreview.style.backgroundImage = "url('../src/img/weather.jpeg')";
     projectPreview.style.backgroundSize = 'contain';
     projectPreview.style.backgroundRepeat = 'no-repeat';
