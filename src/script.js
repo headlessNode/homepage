@@ -15,8 +15,10 @@ const headingThree = document.querySelector('.heading-three h1');
 
 const current = document.querySelector('.current');
 const years = document.querySelector('.years');
-
 const picture = document.querySelector('.picture');
+
+const mainTextOne = document.querySelector('.txt-one');
+const mainTextTwo = document.querySelector('.txt-two');
 
 const initialTimeline = gsap.timeline();
 
@@ -50,9 +52,8 @@ const scrollTimeline = gsap.timeline({
   scrollTrigger: {
     // make ScrollTrigger part of the timeline
     trigger: '.hero',
-    pin: true, // Pin everthing
+    pin: '.hero', // Pin everthing
     scrub: true, // Use true to remove the lag that makes things feel janky
-    markers: true,
     start: 'top',
     end: 'bottom 50%',
   },
@@ -70,7 +71,43 @@ scrollTimeline
       ease: 'none',
     },
     {
-      yPercent: -50,
+      yPercent: -20,
     },
     '<',
   );
+
+const textOneScrollTimeline = gsap.timeline({
+  scrollTrigger: {
+    trigger: mainTextOne,
+    markers: true,
+    start: 'top 70%',
+    end: 'bottom 70%',
+    //events: onEnter, onLeave, onEnterBack, onLeaveBack
+    toggleActions: 'restart reverse restart reverse',
+    //options: play, pause, resume, reset, restart, complete, reverse, none
+  },
+});
+
+textOneScrollTimeline.from(mainTextOne, {
+  opacity: 0,
+  y: 20,
+  ease: 'none',
+});
+
+const textTwoScrollTimeline = gsap.timeline({
+  scrollTrigger: {
+    trigger: mainTextTwo,
+    markers: true,
+    start: 'top 70%',
+    end: 'bottom 70%',
+    //events: onEnter, onLeave, onEnterBack, onLeaveBack
+    toggleActions: 'restart reverse restart reverse',
+    //options: play, pause, resume, reset, restart, complete, reverse, none
+  },
+});
+
+textTwoScrollTimeline.from(mainTextTwo, {
+  opacity: 0,
+  y: 20,
+  ease: 'none',
+});

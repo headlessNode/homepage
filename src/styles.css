@@ -115,7 +115,6 @@ h1 {
 
 .hero {
   padding-top: 120px;
-  border: 1px solid white;
   color: white;
   display: grid;
   grid-template-columns: 1fr;
@@ -132,10 +131,35 @@ h1 {
 .hero .years,
 .hero .current,
 .hero .title {
-  height: 600px;
+  height: 500px;
 }
 
 .hero .picture {
   border-radius: 50px;
-  height: 500px;
+  height: 600px;
+}
+
+.main {
+  padding: 0 50px 0 50px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.main .some-txt {
+  color: white;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  font-size: 80px;
+  max-width: 750px;
+  text-align: center;
+}
+
+.some-txt .txt-one {
+  padding: 80px 0 80px 0;
+}
+
+.some-txt .txt-two {
+  padding: 80px 0 80px 0;
 }
