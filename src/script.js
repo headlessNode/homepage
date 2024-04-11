@@ -142,7 +142,6 @@ projectHeadingScroll.from([projectHeadingOne, projectHeadingTwo], {
 const projectsScrollTimeline = gsap.timeline({
   scrollTrigger: {
     trigger: projectsContainer,
-    markers: true,
     start: 'top 50%',
     end: 'bottom 50%',
   },
@@ -157,25 +156,25 @@ projectsScrollTimeline.from(projectsContainer, {
 function onMouseEnter(event) {
   let buttonArrow;
   if (event.target.classList.contains('battleship')) {
-    projectPreview.style.backgroundImage = "url('../src/img/battleship.jpeg')";
+    projectPreview.style.backgroundImage = "url('../src/img/battleship.png')";
     projectPreview.style.backgroundSize = 'contain';
     projectPreview.style.backgroundRepeat = 'no-repeat';
     projectPreview.style.backgroundPosition = 'center';
     buttonArrow = '.battleship button .arrow';
   } else if (event.target.classList.contains('todo')) {
-    projectPreview.style.backgroundImage = "url('../src/img/todo.jpeg')";
+    projectPreview.style.backgroundImage = "url('../src/img/todo.png')";
     projectPreview.style.backgroundSize = 'contain';
     projectPreview.style.backgroundRepeat = 'no-repeat';
     projectPreview.style.backgroundPosition = 'center';
     buttonArrow = '.todo button .arrow';
   } else if (event.target.classList.contains('tictac')) {
-    projectPreview.style.backgroundImage = "url('../src/img/tic-tac-toe.jpeg')";
+    projectPreview.style.backgroundImage = "url('../src/img/tic-tac-toe.png')";
     projectPreview.style.backgroundSize = 'contain';
     projectPreview.style.backgroundRepeat = 'no-repeat';
     projectPreview.style.backgroundPosition = 'center';
     buttonArrow = '.tictac button .arrow';
   } else {
-    projectPreview.style.backgroundImage = "url('../src/img/weather.jpeg')";
+    projectPreview.style.backgroundImage = "url('../src/img/weather.png')";
     projectPreview.style.backgroundSize = 'contain';
     projectPreview.style.backgroundRepeat = 'no-repeat';
     projectPreview.style.backgroundPosition = 'center';
