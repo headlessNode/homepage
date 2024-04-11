@@ -79,7 +79,6 @@ scrollTimeline
 const textOneScrollTimeline = gsap.timeline({
   scrollTrigger: {
     trigger: mainTextOne,
-    markers: true,
     start: 'top 70%',
     end: 'bottom 70%',
     //events: onEnter, onLeave, onEnterBack, onLeaveBack
@@ -97,7 +96,6 @@ textOneScrollTimeline.from(mainTextOne, {
 const textTwoScrollTimeline = gsap.timeline({
   scrollTrigger: {
     trigger: mainTextTwo,
-    markers: true,
     start: 'top 70%',
     end: 'bottom 70%',
     //events: onEnter, onLeave, onEnterBack, onLeaveBack

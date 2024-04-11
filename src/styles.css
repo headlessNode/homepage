@@ -18,7 +18,7 @@ body {
 p {
   font-family: 'Inter Tight', sans-serif;
   font-optical-sizing: auto;
-  font-weight: 800;
+  font-weight: 600;
   font-size: 18px;
   color: white;
 }
@@ -33,6 +33,15 @@ h1 {
   font-size: 150px;
   line-height: 150px;
   text-align: center;
+}
+
+h4 {
+  color: white;
+  font-family: 'Inter Tight', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 650;
+  font-style: normal;
+  font-size: 40px;
 }
 
 .row {
@@ -162,4 +171,83 @@ h1 {
 
 .some-txt .txt-two {
   padding: 80px 0 80px 0;
+}
+
+.experience {
+  width: 100%;
+  padding-top: 120px;
+  display: grid;
+  align-items: center;
+  gap: 120px;
+}
+
+.experience .proj-heading {
+  display: grid;
+  justify-items: left;
+  align-items: center;
+}
+
+.experience .proj-heading h1 {
+  line-height: 130px;
+}
+
+.experience .projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.proj-preview {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.proj-deets {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  display: grid;
+}
+
+.proj-deets .project {
+  display: grid;
+  align-items: center;
+  gap: 20px;
+  grid-template-rows: 1fr 1fr 50px;
+  padding: 20px 0 20px 0;
+  border-bottom: 1px solid #4f4d57;
+}
+
+.proj-deets .project p {
+  color: #999999;
+  font-weight: 400;
+  line-height: 26px;
+  grid-row: 2/3;
+}
+
+.proj-deets .project .links {
+  grid-row: 3/4;
+}
+
+.proj-deets .project .links a {
+  text-align: center;
+  text-decoration: none;
+  background: white;
+  cursor: pointer;
+  padding: 10px 20px 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Inter Tight', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.proj-deets .project .links a:hover {
+  background: #cccccc;
+}
+
+.proj-deets .project .links a:visited {
+  color: #000;
 }
