@@ -44,15 +44,6 @@ h4 {
   font-size: 40px;
 }
 
-h6 {
-  color: white;
-  font-family: 'Inter Tight', sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 800;
-  font-style: normal;
-  font-size: 18px;
-}
-
 .row {
   max-width: 1440px;
   width: 100%;
@@ -273,20 +264,108 @@ h6 {
 }
 
 .footer .row {
-  border: 1px solid white;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  padding: 100px 80px 100px 80px;
+  padding: 80px 80px 0 80px;
 }
 
-.footer .footer-title {
+.footer .row .footer-title {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
+.footer .row .footer-title {
+  width: 80%;
+}
+
+.footer h6 {
+  color: white;
+  font-family: 'Inter Tight', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 18px;
+}
+
 .footer p {
   font-size: 15px;
   color: #999999;
+}
+
+.footer .row .socials .email {
+  display: grid;
+  grid-template-rows: 100px 40px;
+}
+
+.footer .row .socials .email button {
+  cursor: pointer;
+  padding: 10px 20px 10px 20px;
+  width: min-content;
+  border: none;
+  border-radius: 20px;
+  font-family: 'Inter Tight', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.footer .row .socials .email button .cpy {
+  width: 20px;
+  height: 20px;
+}
+
+.footer .row .socials .email h4 {
+  color: white;
+  font-family: 'Inter Tight', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 28px;
+}
+
+.footer .row .ft-img img {
+  width: 80%;
+}
+
+.footer .row .socials .social-links {
+  padding-top: 40px;
+  display: grid;
+  gap: 20px;
+}
+
+.footer .row .socials .social-links .social-heading {
+  color: #999999;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.footer .row .socials .social-links .links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 20px;
+}
+
+.footer .row .socials .social-links .links a {
+  cursor: pointer;
+  font-family: 'Inter Tight', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-size: 15px;
+  color: #999999;
+  text-decoration: none;
+}
+
+.footer .row .socials .social-links .links a:hover {
+  text-decoration: underline;
+}
+
+.footer .row .socials .social-links .links > * {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
