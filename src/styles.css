@@ -82,6 +82,10 @@ h4 {
   gap: 5px;
 }
 
+.connect button:hover {
+  background: #cccccc;
+}
+
 .connect button .cpy {
   width: 20px;
   height: 20px;
@@ -313,6 +317,10 @@ h4 {
   gap: 5px;
 }
 
+.footer .row .socials .email button:hover {
+  background: #cccccc;
+}
+
 .footer .row .socials .email button .cpy {
   width: 20px;
   height: 20px;
@@ -364,8 +372,41 @@ h4 {
   text-decoration: underline;
 }
 
+.footer .row .socials .social-links .links a:active {
+  color: red;
+}
+
 .footer .row .socials .social-links .links > * {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.design-reference {
+  width: 100%;
+  padding: 15px 0 15px 0;
+  text-align: center;
+}
+
+.design-reference p {
+  color: #999999;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.design-reference a {
+  text-decoration: none;
+  color: white;
+}
+
+.design-reference a:hover {
+  text-decoration: underline;
+}
+
+.design-reference a:visited {
+  color: white;
+}
+
+.design-reference a:active {
+  color: red;
 }
