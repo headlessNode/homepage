@@ -44,6 +44,15 @@ h4 {
   font-size: 40px;
 }
 
+h6 {
+  color: white;
+  font-family: 'Inter Tight', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 18px;
+}
+
 .row {
   max-width: 1440px;
   width: 100%;
@@ -176,6 +185,7 @@ h4 {
 .experience {
   width: 100%;
   padding-top: 120px;
+  padding-bottom: 80px;
   display: grid;
   align-items: center;
 }
@@ -242,6 +252,9 @@ h4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  > p {
+    color: #999999;
+  }
 }
 
 .project button .arrow {
@@ -250,4 +263,30 @@ h4 {
   justify-content: center;
   width: 0%;
   transform: translateX(-20px);
+}
+
+.footer {
+  background: black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer .row {
+  border: 1px solid white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 100px 80px 100px 80px;
+}
+
+.footer .footer-title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer p {
+  font-size: 15px;
+  color: #999999;
 }
