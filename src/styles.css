@@ -212,7 +212,6 @@ h4 {
 }
 
 .proj-preview .preview-img {
-  /* border: 1px solid white; */
   width: 100%;
   height: 500px;
   border-radius: 20px;
@@ -231,18 +230,21 @@ h4 {
   border-bottom: 1px solid #4f4d57;
 }
 
-.proj-deets .project button {
+.proj-deets .project a {
+  text-decoration: none;
   cursor: pointer;
   width: 100%;
   height: 100%;
-  background: none;
-  border: none;
   display: flex;
   align-items: center;
   overflow: hidden;
 }
 
-.project button .proj-txt {
+.proj-deets .project a:visited {
+  color: inherit;
+}
+
+.project a .proj-txt {
   width: 90%;
   display: flex;
   justify-content: space-between;
@@ -252,7 +254,7 @@ h4 {
   }
 }
 
-.project button .arrow {
+.project a .arrow {
   display: flex;
   align-items: center;
   justify-content: center;
