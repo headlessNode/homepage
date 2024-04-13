@@ -82,7 +82,7 @@ h4 {
   gap: 5px;
 }
 
-.connect button:hover {
+.connect button:active {
   background: #cccccc;
 }
 
@@ -319,7 +319,7 @@ h4 {
   gap: 5px;
 }
 
-.footer .row .socials .email button:hover {
+.footer .row .socials .email button:active {
   background: #cccccc;
 }
 

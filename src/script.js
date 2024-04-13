@@ -5,6 +5,10 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const homePageAnimations = (() => {
+  const headerBtn = document.querySelector('.header .connect button');
+  const footerBtn = document.querySelector(
+    '.wrapper .footer .row .socials .email button',
+  );
   const headingOne = document.querySelector('.heading-one h1');
   const headingTwo = document.querySelector('.heading-two h1');
   const headingThree = document.querySelector('.heading-three h1');
@@ -232,4 +236,22 @@ const homePageAnimations = (() => {
     project.addEventListener('mouseenter', onMouseEnter);
     project.addEventListener('mouseleave', onMouseLeave);
   });
+
+  async function copyContent(event) {
+    let text;
+    if (event.target === headerBtn) {
+      text = headerBtn.textContent;
+    } else {
+      text = footerBtn.textContent;
+    }
+    try {
+      await navigator.clipboard.writeText(text);
+      console.log('Content copied to clipboard');
+    } catch (err) {
+      console.error('Failed to copy: ', err);
+    }
+  }
+
+  headerBtn.addEventListener('click', copyContent);
+  footerBtn.addEventListener('click', copyContent);
 })();
