@@ -39,8 +39,8 @@ const homePageAnimations = (() => {
   const projects = document.querySelectorAll('.projects .proj-deets .project');
 
   const footer = document.querySelector('.wrapper .footer');
-  const footerImage = footer.querySelector('.row .footer-title .ft-img');
-  footerImage.style.backgroundImage = `url(../src/img/footer-profile.png)`;
+  const footerImage = footer.querySelector('.row .footer-title .ft-img img');
+  footerImage.src = footerImg;
 
   const initialTimeline = gsap.timeline();
 
