@@ -4,6 +4,7 @@ import tictactoeImg from '../src/img/tic-tac-toe.png';
 import weatherImg from '../src/img/weather.png';
 import todoImg from '../src/img/todo.png';
 import profile from '../src/img/profile.jpeg';
+import footerImg from '../src/img/footer-profile.png';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 
