@@ -19,6 +19,9 @@ const homePageAnimations = (() => {
   const headingTwo = document.querySelector('.heading-two h1');
   const headingThree = document.querySelector('.heading-three h1');
 
+  const hero = document.querySelector('.wrapper .pin .hero');
+  const heroImg = hero.querySelector('img');
+  heroImg.src = profile;
   const current = document.querySelector('.current');
   const years = document.querySelector('.years');
   const picture = document.querySelector('.picture');
@@ -34,6 +37,10 @@ const homePageAnimations = (() => {
     '.projects .proj-preview .preview-img',
   );
   const projects = document.querySelectorAll('.projects .proj-deets .project');
+
+  const footer = document.querySelector('.wrapper .footer');
+  const footerImage = footer.querySelector('.row .footer-title .ft-img');
+  footerImage.style.backgroundImage = `url(../src/img/footer-profile.png)`;
 
   const initialTimeline = gsap.timeline();
 
