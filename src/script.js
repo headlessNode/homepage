@@ -1,4 +1,9 @@
 import './styles.css';
+import battleshipImg from '../src/img/battleship.png';
+import tictactoeImg from '../src/img/tic-tac-toe.png';
+import weatherImg from '../src/img/weather.png';
+import todoImg from '../src/img/todo.png';
+import profile from '../src/img/profile.jpeg';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 
@@ -150,26 +155,25 @@ const homePageAnimations = (() => {
   function onMouseEnter(event) {
     let buttonArrow;
     if (event.target.classList.contains('battleship')) {
-      projectPreview.style.backgroundImage = "url('../src/img/battleship.png')";
+      projectPreview.style.backgroundImage = `url(${battleshipImg})`;
       projectPreview.style.backgroundSize = 'contain';
       projectPreview.style.backgroundRepeat = 'no-repeat';
       projectPreview.style.backgroundPosition = 'center';
       buttonArrow = '.battleship a .arrow';
     } else if (event.target.classList.contains('todo')) {
-      projectPreview.style.backgroundImage = "url('../src/img/todo.png')";
+      projectPreview.style.backgroundImage = `url(${todoImg})`;
       projectPreview.style.backgroundSize = 'contain';
       projectPreview.style.backgroundRepeat = 'no-repeat';
       projectPreview.style.backgroundPosition = 'center';
       buttonArrow = '.todo a .arrow';
     } else if (event.target.classList.contains('tictac')) {
-      projectPreview.style.backgroundImage =
-        "url('../src/img/tic-tac-toe.png')";
+      projectPreview.style.backgroundImage = `url(${tictactoeImg})`;
       projectPreview.style.backgroundSize = 'contain';
       projectPreview.style.backgroundRepeat = 'no-repeat';
       projectPreview.style.backgroundPosition = 'center';
       buttonArrow = '.tictac a .arrow';
     } else {
-      projectPreview.style.backgroundImage = "url('../src/img/weather.png')";
+      projectPreview.style.backgroundImage = `url(${weatherImg})`;
       projectPreview.style.backgroundSize = 'contain';
       projectPreview.style.backgroundRepeat = 'no-repeat';
       projectPreview.style.backgroundPosition = 'center';
