@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  display: block;
+}
+
 body {
   background: rgb(26, 26, 26);
 }
