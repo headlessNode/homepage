@@ -1,3 +1,4 @@
+import './styles.css';
 import battleshipImg from '../src/img/battleship.png';
 import tictactoeImg from '../src/img/tic-tac-toe.png';
 import weatherImg from '../src/img/weather.png';
